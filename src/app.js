@@ -110,5 +110,5 @@ $('#applyImport').onclick = () => {
   toast(`恢复完成：新增 ${imported.length} 条，跳过重复 ${duplicates} 条、无效 ${invalid} 条`);
 };
 
-if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
 render();
